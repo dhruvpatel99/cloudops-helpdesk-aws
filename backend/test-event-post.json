@@ -1,0 +1,12 @@
+{
+  "version": "2.0",
+  "routeKey": "POST /tickets",
+  "rawPath": "/tickets",
+  "requestContext": {
+    "http": {
+      "method": "POST"
+    }
+  },
+  "body": "{\"title\":\"Laptop issue\",\"description\":\"Laptop is running slowly\"}",
+  "isBase64Encoded": false
+}
