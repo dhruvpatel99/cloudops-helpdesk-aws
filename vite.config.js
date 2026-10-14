@@ -7,8 +7,8 @@ import { dirname, resolve } from "path";
 const root = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  // Must match the GitHub repo name, or the published pages load blank.
-  base: "/cloudops-helpdesk-aws/",
+  // "/" for CloudFront (default). GitHub Pages sets BASE_PATH=/cloudops-helpdesk-aws/
+  base: process.env.BASE_PATH || "/",
 
   plugins: [react(), tailwindcss()],
 
